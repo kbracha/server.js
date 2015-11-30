@@ -7,6 +7,9 @@ var port = process.env.PORT || 1337;
 
 var url = "mongodb://<krzbracha>:<node1mango>@ds057934.mongolab.com:57934/nodemango";
 
+//We need to work with "MongoClient" interface in order to connect to a mongodb server.
+var MongoClient = mongodb.MongoClient;
+
 
 http.createServer(function(request, response) {
     response.writeHead(200, { 'Content-Type': 'text/plain' });
